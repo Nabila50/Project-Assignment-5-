@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <!-- Style File -->
+     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-sky-300">
+    <header class="justify-center bg-white h-25 border-none rounded-2xl max-w-full ml-[140px] mr-[140px] mt-6">
+        <nav class="flex justify-between ">
+            <div class="logo flex w-[270px] mt-5 ml-6 ">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl items-center justify-center ml-3">Dev <span class="font-bold">Board</span></h2>
+
+            </div>
+            <div class="count flex mt-5 mr-6">
+                <div class="flex bg-[#F4F7FF] w-25 h-12 items-center border-none rounded-full p-4">
+                    <img  class="w-8 h-8" src="assets/checkbox.png" alt="">
+                    <h2 class="text-2xl pl-4 font-bold"><span id="header-number">23</span></h2>
+                </div>
+                <img id="back" class="w-16 h-16 ml-4" src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- upper box section -->
+    <section class="flex mt-6 poppins  border-none rounded-xl  ml-[140px] mr-[140px] gap-4 ">
+        <div class="all-section w-3/4 bg-white mr-4 border-none rounded-xl">
+         <!-- Task & discover -->
+            <div class="grid grid-cols-7 mt-6 ">
+                <div class="item-1 flex col-start-1 col-span-2 border border-none rounded-xl mr-2 w-[263px] h-[128px] justify-center items-center mb-8 ml-6 bg-[#F4F7FF]">
+                    <img class="w-10 h-10  rounded-full mr-4" src="assets/checkbox.png"  alt=""> 
+                    <div class="task-div">
+                        <h2 class="poppins-medium">Task Assigned</h2>
+                        <h2 class="poppins-bold"><span  id="task">05</span></h2>
+                    </div>
+                    
+                </div>
+                <div class="item-2 flex col-start-3 col-span-3 border border-none rounded-xl mr-2 justify-center items-center mb-8 bg-[#F4F7FF]">
+                    <img class="w-16 h-16 mr-4 " src="assets/board.png" alt="">
+                    <h2 class="poppins-medium text-2xl">Discover Something <br>New Today!</h2>
+                </div>
+                <div class="item-3 flex col-start-6 col-span-7 border border-none rounded-xl mr-2 w-[263px] h-[128px] ml-12 justify-center items-center bg-[#F4F7FF]">
+                    <img class="w-10 h-10  rounded-full mr-4" src="assets/calender.png" alt="">
+                    <h2 class="poppins-medium">Wed, <br> <span class="font-bold">Jul 28 2025</span></h2>
+                </div>
+            </div>
+            <!-- bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] -->
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <!-- Card Section -->
+            <div class="big-part  bg-white border border-none rounded-2xl mr-2 grid grid-cols-3">
+ 
+            <!-- card-1 -->
+                <div class="card w-[342px] h-[317px] bg-[#F4F7FF] mb-6 mt-6 ml-6  gap-4">                
+                <div class="card-body">
+                    <div class="badge bg-white poppins-regular pt-1 pb-1">ShopEase</div>
+                    <h2 id="title" class="card-title text-2xl poppins-medium mt-2">
+                    Fix Mobile Button Issue</h2>
+                    <div class="bg-white border-none rounded-xl p-2 w-[294px] mb-9 mt-2">
+                        <p class="poppins-regular ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p>Deadline</p>
+                            <p class="poppins-medium">21 March 2025</p>
+                        </div>
+                        <button id="card-btn" class="btn complete-btn bg-[#3752FD] text-white px-4 py-5 border-none shadow-none">Completed</button>
+                    </div>
+                </div>
+                </div>
+            <!-- card-2 -->
+                <div class="card w-[342px] h-[317px] bg-[#F4F7FF]  mb-6 mt-6 ml-6  gap-4">                
+                    <div class="card-body">
+                    <div class="badge bg-white poppins-regular pt-1 pb-1">ShopEase</div>
+                    <h2  id="title-2" class="card-title text-2xl poppins-medium mt-2">
+                    Add Dark Mode</h2>
+                    <div class="bg-white border-none rounded-xl p-2 w-[294px] mb-9 mt-2">
+                        <p class="poppins-regular ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p>Deadline</p>
+                            <p class="poppins-medium">21 March 2025</p>
+                        </div>
+                        <button id="card-btn" class="btn complete-btn bg-[#3752FD] text-white px-4 py-5 border-none shadow-none">Completed</button>
+                    </div>
+                </div>
+                </div>
+            <!-- card -3 -->
+                <div class="card w-[342px] h-[317px] bg-[#F4F7FF] mb-6 mt-6 ml-6  gap-6">                
+                <div class="card-body">
+                    <div class="badge bg-white poppins-regular pt-1 pb-1">ShopEase</div>
+                    <h2 class="card-title text-2xl poppins-medium mt-2">
+                        Optimize  Home page </h2>
+                    <div class="bg-white border-none rounded-xl p-2 w-[294px] mb-9 mt-2">
+                        <p class="poppins-regular ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p>Deadline</p>
+                            <p class="poppins-medium">21 March 2025</p>
+                        </div>
+                        <button id="card-btn" class="btn complete-btn bg-[#3752FD] text-white px-4 py-5 border-none shadow-none">Completed</button>
+                    </div>
+                </div>
+                </div>
+            <!-- card -4 -->
+                <div class="card w-[342px] h-[317px] bg-[#F4F7FF]  mb-6">                
+                <div class="card-body">
+                    <div class="badge bg-white poppins-regular pt-1 pb-1">ShopEase</div>
+                    <h2 class="card-title text-2xl poppins-medium mt-2">
+                        Add new emoji 🤲</h2>
+                    <div class="bg-white border-none rounded-xl p-2 w-[294px] mb-9 mt-2">
+                        <p class="poppins-regular ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p>Deadline</p>
+                            <p class="poppins-medium">21 March 2025</p>
+                        </div>
+                        <button class="btn complete-btn bg-[#3752FD] text-white px-4 py-5 border-none shadow-none">Completed</button>
+                    </div>
+                </div>
+                </div>
+            <!-- card -5 -->
+                <div class="card w-[342px] h-[317px] bg-[#F4F7FF]  mb-6">                
+                <div class="card-body">
+                    <div class="badge bg-white poppins-regular pt-1 pb-1">ShopEase</div>
+                    <h2 class="card-title text-2xl poppins-medium mt-2">
+                        Integrate OpenAI API </h2>
+                    <div class="bg-white border-none rounded-xl p-2 w-[294px] mb-9 mt-2">
+                        <p class="poppins-regular ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p>Deadline</p>
+                            <p class="poppins-medium">21 March 2025</p>
+                        </div>
+                        <button class="btn complete-btn bg-[#3752FD] text-white px-4 py-5 border-none shadow-none">Completed</button>
+                    </div>
+                </div>
+                </div>
+            <!-- card -6 -->
+                <div class="card w-[342px] h-[317px] bg-[#F4F7FF] mb-6">                
+                <div class="card-body">
+                    <div class="badge bg-white poppins-regular pt-1 pb-1">ShopEase</div>
+                    <h2 class="card-title text-2xl poppins-medium mt-2">
+                        Improve Job searching </h2>
+                    <div class="bg-white border-none rounded-xl p-2 w-[294px] mb-9 mt-2">
+                        <p class="poppins-regular ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p>Deadline</p>
+                            <p class="poppins-medium">21 March 2025</p>
+                        </div>
+                        <button id="final" class="btn bg-[#3752FD] text-white px-4 py-5 border-none shadow-none">Completed</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+        </div>
+
+        <div class="small-part bg-white border border-none rounded-2xl">
+            <div class="active flex justify-center mx-6 gap-4 my-8">
+                <img src="assets/activity.png" alt="">
+                <h2 class="poppins-medium">Activity Log</h2>
+            </div>
+            
+            <center>
+                <button id="history-btn" class=" btn  bg-[#3752FD] text-white px-4 py-5 border-none shadow-none items-center mt-2">Clear History</button>
+            </center>
+
+            <div class="font-thin">--------------------------------------------------------------</div>
+            <div id="history" class="trnsection mr-4 max-w-full">
+                 
+                <div id="history-container" class="mr-2 mt-4 ml-2 leading-normal bg-[#d8dadf] border-none rounded-xl pr-2 pl-4 "></div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script/background.js"></script>
+    <script src="script/button.js"></script>
+    <script src="script/history.js"></script>
+</body>
+</html>bg
