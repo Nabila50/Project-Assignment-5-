@@ -50,3 +50,7 @@
     background-color: grey;
     color: black;
   }
+
+  .horizontal-line{
+    border: 0.5px dashed gray;
+  }
